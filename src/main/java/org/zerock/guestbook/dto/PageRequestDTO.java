@@ -16,8 +16,13 @@ public class PageRequestDTO {
        JPA쪽에서 사용하는 Pageable 타입의 객체를 생성하는 것이 진짜 목적.
     */
 
+    // 페이징용
     private int page;
     private int size;
+    
+    // 검색용
+    private String type;    // 검색 조건
+    private String keyword; // 검색 키워드
 
     // 페이지 번호 등은 기본값을 가지는 것이 좋기 때문에 1과 10이라는 값을 이용한다
     public PageRequestDTO(){
